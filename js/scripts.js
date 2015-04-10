@@ -15,6 +15,7 @@ var triangulator = function(input1, input2, input3) {
     if (input1 !== input2 && input2 !== input3 && input3 !== input1) {
       return scalene;
     };
+    
 };
 
 
