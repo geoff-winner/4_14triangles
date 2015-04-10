@@ -30,5 +30,12 @@ describe('triangulator', function(){
     it("returns a Not a triangle triangle if input4 < input3", function(){
         expect(triangulator(2, 3, 6)).to.equal('Not a triangle');
     });
+    it("returns a Not a triangle triangle if input5 < input1", function(){
+        expect(triangulator(4, 2, 1)).to.equal('Not a triangle');
+    });
+    it("returns a Not a triangle triangle if input6 < input2", function(){
+        expect(triangulator(2, 10, 6)).to.equal('Not a triangle');
+    });
+
 
 });

@@ -5,21 +5,25 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Scrabble Scores</title>
+    <title>Types of Triangles</title>
   </head>
   <body>
       <center>
     <div class ="container">
-    <form id='word'>
+    <form id='input'>
         <div class="form-group">
-            <label id='word'>Enter a word:</label>
-            <input id='word' name='word' type='text'>
+          <label id='input1'>Enter Side 1:</label>
+          <input id='input1' name='input1' type='text'>
+          <label id='input2'>Enter Side 2:</label>
+          <input id='input2' name='input2' type='text'>
+          <label id='input3'>Enter Side 3:</label>
+          <input id='input3' name='input3' type='text'>
         </div>
-        <button type='submit' class='btn btn-success'>Submit</button>
+          <button type='submit' class='btn btn-success'>Submit</button>
     </form>
     </div>
         <div id='result'>
-            <p>Your word is worth <span class='total_score'></span> points.</p>
+            <p>Your triangle is an<span class='type_of_triangle'></span>.</p>
         </div>
     </center>
   </body>
