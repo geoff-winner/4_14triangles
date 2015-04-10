@@ -1,8 +1,8 @@
 ###Developers
-John Franti, Geoff WInner
+Geoff WInner
 
 ###Date
-April 9, 2015<br />
+April 10, 2015<br />
 
 ###Description
 Scrabble Score
