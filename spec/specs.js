@@ -27,5 +27,8 @@ describe('triangulator', function(){
     it("returns a Isosceles triangle if input1 == input3", function(){
         expect(triangulator(2, 3, 3)).to.equal('Isosceles');
     });
+    it("returns a Not a triangle triangle if input4 < input3", function(){
+        expect(triangulator(2, 3, 6)).to.equal('Not a triangle');
+    });
 
 });
