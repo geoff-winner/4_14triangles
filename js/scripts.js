@@ -4,18 +4,18 @@ var triangulator = function(input1, input2, input3) {
     var scalene = 'Scalene';
     var notatriangle = 'Not a triangle';
 
-    if (input1 === input2) {
-      return isosceles;
-    } else if (input1 === input3) {
-      return isosceles;
-    } else if (input2 === input3) {
-      return isosceles;
+    if (input1 === input2 && input1 === input3 && input2 === input3) {
+      return equilateral;
     };
 
     if (input1 !== input2 && input2 !== input3 && input3 !== input1) {
       return scalene;
     };
-    
+
+    if (input1 !== input3 && input3 === input2 && input1 !== input2) {
+      return isosceles;
+    };
+
 };
 
 
