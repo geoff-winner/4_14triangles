@@ -1,7 +1,7 @@
 debugger;
 var triangulator = function(input1, input2, input3) {
     var typeoftriangle = '';
-    var notatriangle = 'Not a triangle';
+    var notatriangle = 'not a triangle';
     var input4 = input1 + input2;
     var input5 = input2 + input3;
     var input6 = input1 + input3;
@@ -23,22 +23,23 @@ var triangulator = function(input1, input2, input3) {
     } else if (input1 !== input3 && input3 === input2 && input1 !== input2) {
       var typeoftriangle = 'Isosceles';
     } else {
-      var typeoftriangle = 'Not a triangle';
+      var typeoftriangle = 'not a triangle';
     };
     return typeoftriangle;
 
 };
 
-// $(document).ready(function() {
-//   $('form#input').submit(function(event) {
-//       var input1 = parseInt($('input#input1').val());
-//       var input2 = parseInt($('input#input2').val());
-//       var input3 = parseInt($('input#input3').val());
-//       var typeoftriangle
-//   })
-//
-//
-//
-//     $('#result').show();
-//     event.preventDefault();
-// })
+$(document).ready(function() {
+  $('form#input').submit(function(event) {
+      var input1 = parseInt($('input#input1').val());
+      var input2 = parseInt($('input#input2').val());
+      var input3 = parseInt($('input#input3').val());
+      var final = triangulator(input1, input2, input3);
+
+
+      $('.final').text(final);
+
+    $('#result').show();
+    event.preventDefault();
+  });
+});
