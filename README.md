@@ -1,14 +1,16 @@
 ###Developers
-Geoff WInner
+Geoff Winner
 
 ###Date
 April 10, 2015<br />
 
 ###Description
-Scrabble Score
-Allows users to check Scrabble scores.
+Triangle Finder.
+This application will allow you to enter in 3 sides of a triangle and find out what kind of triangle you have created, or if you have created one at all.
 
-###Copyright (c) 2015 John Franti, Geoff Winner
+Using simple math and if statements in Javascript we can quickly find out this information.
+
+###Copyright (c) 2015 Geoff Winner
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
