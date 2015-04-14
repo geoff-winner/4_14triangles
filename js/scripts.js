@@ -38,6 +38,16 @@ $(document).ready(function() {
       var input3 = parseInt($('input#input3').val());
       var final = triangulator(input1, input2, input3);
 
+      var storedTri = { side1: input1, side2: input2, side3: input3 };
+
+      if (final === 'Isosceles') {
+          $("ul#isoc").append("<li><span class= 'iso'>" + storedTri.side1 + " " + storedTri.side2 + " " + storedTri.side3 + "</span></ul>")
+      } else if (final === 'Scalene') {
+          $("ul#scal").append("<li><span class= 'sca'>" + storedTri.side1 + " " + storedTri.side2 + " " + storedTri.side3 + "</span></ul>")
+      } else if (final === 'Equilateral') {
+          $("ul#equi").append("<li><span class= 'eq'>" + storedTri.side1 + " " + storedTri.side2 + " " + storedTri.side3 + "</span></ul>")
+      };
+
 
       $('.final').text(final);
 
