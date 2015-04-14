@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.11.2.js"></script>
-    <script src="js/scripts.js"></script>
-    <title>Types of Triangles</title>
-  </head>
-  <body>
-      <center>
-        <h1><small>Types of </small>Triangles</h1>
-    <div class ="container">
-    <form id='input'>
-        <div class="form-group">
-          <label id='input1'>Enter Side 1:</label>
-          <input id='input1' name='input1' type='text'>
-          <label id='input2'>Enter Side 2:</label>
-          <input id='input2' name='input2' type='text'>
-          <label id='input3'>Enter Side 3:</label>
-          <input id='input3' name='input3' type='text'>
+    <head>
+        <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <script src="js/jquery-1.11.2.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>Types of Triangles</title>
+    </head>
+
+    <body>
+        <center>
+            <h1><small>Types of </small>Triangles</h1>
+        <div class ="container-fluid">
+            <form id='input'>
+                <div class="form-group">
+                  <label id='input1'>Enter Side 1:</label>
+                  <input id='input1' name='input1' type='text'><br>
+                  <label id='input2'>Enter Side 2:</label>
+                  <input id='input2' name='input2' type='text'><br>
+                  <label id='input3'>Enter Side 3:</label>
+                  <input id='input3' name='input3' type='text'><br>
+                </div>
+                  <button type='submit' class='btn btn-success'>Submit</button>
+            </form>
+            <div id='result'>
+                <p>Your triangle is <span class='final'></span>.</p>
+            </div>
+        </center>
+            <div class="text-center">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h1>Isosceles</h1>
+                        <ul id='isoc'>
+                            <span class='iso'></span>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1>Equilateral</h1>
+                        <ul id='equi'>
+                            <span class='eq'></span>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1>Scalene</h1>
+                        <ul id='scal'>
+                            <span class='sca'></span>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-          <button type='submit' class='btn btn-success'>Submit</button>
-    </form>
-    </div>
-        <div id='result'>
-            <p>Your triangle is <span class='final'></span>.</p>
-        </div>
-    </center>
-    <h1>Isosceles</h1>
-    <ul id='isoc'>
-        <p><span class='iso'></span>
-    </ul>
-
-    <h1>Equilateral</h1>
-    <ul id='equi'>
-        <p><span class='eq'></span>
-    </ul>
-
-    <h1>Scalene</h1>
-    <ul id='scal'>
-        <p><span class='sca'></span>
-    </ul>
-
     </body>
 </html>

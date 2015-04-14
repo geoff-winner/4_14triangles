@@ -41,11 +41,11 @@ $(document).ready(function() {
       var storedTri = { side1: input1, side2: input2, side3: input3 };
 
       if (final === 'Isosceles') {
-          $("ul#isoc").append("<li><span class= 'iso'>" + storedTri.side1 + " " + storedTri.side2 + " " + storedTri.side3 + "</span></ul>")
+          $("ul#isoc").append("<ul><span class= 'iso'>" + storedTri.side1 + " " + storedTri.side2 + " " + storedTri.side3 + "</span></ul>")
       } else if (final === 'Scalene') {
-          $("ul#scal").append("<li><span class= 'sca'>" + storedTri.side1 + " " + storedTri.side2 + " " + storedTri.side3 + "</span></ul>")
+          $("ul#scal").append("<ul><span class= 'sca'>" + storedTri.side1 + " " + storedTri.side2 + " " + storedTri.side3 + "</span></ul>")
       } else if (final === 'Equilateral') {
-          $("ul#equi").append("<li><span class= 'eq'>" + storedTri.side1 + " " + storedTri.side2 + " " + storedTri.side3 + "</span></ul>")
+          $("ul#equi").append("<ul><span class= 'eq'>" + storedTri.side1 + " " + storedTri.side2 + " " + storedTri.side3 + "</span></ul>")
       };
 
 
