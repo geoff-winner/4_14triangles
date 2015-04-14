@@ -22,9 +22,11 @@ var triangulator = function(input1, input2, input3) {
       var typeoftriangle = 'Scalene';
     } else if (input1 !== input3 && input3 === input2 && input1 !== input2) {
       var typeoftriangle = 'Isosceles';
-    } else {
-      var typeoftriangle = 'not a triangle';
-    };
+    } else if (input1 === input3 && input2 !== input1 && input2 !== input3) {
+      var typeoftriangle = 'Isosceles';
+    } else if (input1 === input2 && input1 !== input3 && input2 !== input3) {
+      var typeoftriangle = 'Isosceles';
+  };
     return typeoftriangle;
 
 };
